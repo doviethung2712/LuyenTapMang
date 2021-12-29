@@ -7,18 +7,16 @@
 <body>
 <script>
     function checkX(arr, n) {
-        for (let i = 0; i < arr.length; i++) {
-            if (n == arr[i]) {
-                console.log('Co Trong Mang')
-            } else {
-                console.log('Khong Co Trong Mang');
-
-            }
+        if (arr.indexOf(n) >= 0){
+            return "Co Trong Mang"
+        } else {
+            return "Khong Co Trong Mang"
         }
-
     }
 
-    checkX([1, 25, 1, 5, 1, 5, 6, 4, 1], 1)
+    console.log(
+    checkX([1, 25, 1, 5, 1, 5, 6, 4, 1], 25)
+    );
 </script>
 </body>
 </html>
