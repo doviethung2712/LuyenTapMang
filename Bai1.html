@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tinhTB(arr) {
+        let total = 0;
+        for (let i = 0; i < arr.length; i++) {
+            total += arr[i];
+        }
+        let tinhTB = total / arr.length
+        console.log(tinhTB)
+
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > tinhTB) {
+                console.log(arr[i])
+            }
+        }
+    }
+
+    tinhTB([3, 2, 6, 8, 3, 5, 2])
+</script>
+</body>
+</html>
